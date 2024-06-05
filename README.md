@@ -2,7 +2,7 @@
 
 ## The Idea
 
-The assignment was given to create a server using node server and since my darling rescue dog has been one of my largest cheerleaders while taking this course, I thought it only fitting to finally make a project inspired by her!
+The assignment was given to create a server using MongoDB or Mongoose, and since my darling rescue dog has been one of my largest comforts and supports (she has heard plenty of rants about how I can't make it and let me cry on her when I have struggled) while taking this course, I thought it only fitting to finally make a project inspired by her!
 
 ## Tech
 
