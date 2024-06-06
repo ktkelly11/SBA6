@@ -28,14 +28,10 @@ const adopterSchema = new Schema({
   },
   otherPets: [
     {
-      type: Boolean,
-      required: true,
-      pets: {
-        petName: String,
-        petType: String,
-        color: String,
-        age: Number,
-      },
+      petName: String,
+      petType: String,
+      color: String,
+      age: Number,
     },
   ],
 });
