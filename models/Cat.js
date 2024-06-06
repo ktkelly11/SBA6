@@ -6,7 +6,7 @@ const catSchema = Schema({
     required: true,
     unique: true,
   },
-  catType: {
+  catBreed: {
     type: String,
     required: true,
   },

@@ -1,17 +1,35 @@
-const { Schema, model } = require('../config/db-connection');
+const { Schema, model } = require("../config/db-connection");
 
-const userSchema = Schema({
-  email: {
+const dogSchema = Schema({
+  name: {
     type: String,
     required: true,
     unique: true,
   },
-  password: {
+  dogBreed: {
     type: String,
     required: true,
-    unique: true,
-    min: 5,
+  },
+  age: {
+    type: Number,
+    required: true,
+  },
+  gender: {
+    type: String,
+    required: true,
+  },
+  color: {
+    type: String,
+    required: true,
+  },
+  vacinated: {
+    type: Boolean,
+    required: true,
+  },
+  referenceNum: {
+    type: Number,
+    required: true,
   },
 });
 
-module.exports = model('User', userSchema);
+module.exports = model("Dog", dogSchema);
