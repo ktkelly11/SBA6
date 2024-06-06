@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User = require("../models/Adopter");
 
 module.exports = {
   createUser,
@@ -10,6 +10,6 @@ async function createUser(req, res) {
 
     res.status(200).json(user);
   } catch (err) {
-    res.status(400).json('No Beuno:(');
+    res.status(400).json("No Beuno:(");
   }
 }
