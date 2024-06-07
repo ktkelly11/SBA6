@@ -306,16 +306,21 @@ const cats = [
 
 async function seed() {
   try {
-    await Post.deleteMany({});
-    await User.deleteMany({});
+    await Adopter.deleteMany({});
+    await Dog.deleteMany({});
+    await Cat.deleteMany({});
 
-    const createdPosts = await Post.create(posts);
+    const createdAdopters = await Adopter.create(adopters);
 
-    console.log("Posts: ", createdPosts);
+    console.log("Adopters: ", createdAdopters);
 
-    const createdUsers = await User.create(users);
+    const createdDogs = await Dogs.create(dogs);
 
-    console.log("Users: ", createdUsers);
+    console.log("Dogs: ", createdDogs);
+
+    const createdCats = await cats.create(cats);
+
+    console.log("Cats: ", createdCats);
 
     await mongoose.connection.close();
   } catch (err) {
