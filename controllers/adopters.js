@@ -4,6 +4,7 @@ module.exports = {
   createAdopter,
   getAdopters,
   updateAdopter,
+  deleteAdopter,
 };
 
 async function createAdopter(req, res) {
@@ -37,6 +38,18 @@ async function updateAdopter(req, res) {
     );
 
     res.status(200).json(updatedAdopter);
+  } catch (err) {
+    res.status(400).send(err);
+  }
+}
+
+async function deleteAdopter(req, res) {
+  try {
+    await Adopter.findByIdAndDelete(req.params.id);
+
+    res.status(200).json({
+      message: "Successfully Deleted the Adopter",
+    });
   } catch (err) {
     res.status(400).send(err);
   }

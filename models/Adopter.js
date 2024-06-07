@@ -36,4 +36,6 @@ const adopterSchema = new Schema({
   ],
 });
 
+adopterSchema.index({ name: 1 });
+
 module.exports = model("Adopter", adopterSchema);

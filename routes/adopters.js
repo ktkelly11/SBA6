@@ -9,4 +9,6 @@ router.get("/", adoptersCtrl.getAdopters);
 
 router.put("/:id", adoptersCtrl.updateAdopter);
 
+router.delete("/:id", adoptersCtrl.deleteAdopter);
+
 module.exports = router;
