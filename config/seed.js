@@ -314,11 +314,11 @@ async function seed() {
 
     console.log("Adopters: ", createdAdopters);
 
-    const createdDogs = await Dogs.create(dogs);
+    const createdDogs = await Dog.create(dogs);
 
     console.log("Dogs: ", createdDogs);
 
-    const createdCats = await cats.create(cats);
+    const createdCats = await Cat.create(cats);
 
     console.log("Cats: ", createdCats);
 
