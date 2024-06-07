@@ -1,15 +1,17 @@
-const User = require("../models/Adopter");
+const Adopter = require("../models/Adopter");
 
 module.exports = {
-  createUser,
+  createAdopter,
 };
 
-async function createUser(req, res) {
+async function createAdopter(req, res) {
   try {
-    const user = await User.create(req.body);
+    const adopter = new Adopter(req.body);
+
+    await adopter.save();
 
     res.status(200).json(user);
   } catch (err) {
-    res.status(400).json("No Beuno:(");
+    res.status(400).json(err);
   }
 }

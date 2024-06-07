@@ -1,8 +1,8 @@
 const { Router } = require("express");
-const usersCtrl = require("../controllers/adopters.js");
+const adoptersCtrl = require("../controllers/adopters.js");
 
 const router = Router();
 
-router.post("/", usersCtrl.createUser);
+router.post("/", adoptersCtrl.createAdopter);
 
 module.exports = router;
