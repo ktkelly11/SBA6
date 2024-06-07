@@ -10,8 +10,9 @@ I used a number of open source projects in order to work properly:
 
 - JavaScript
 - Express and Node
-- MongoDB
 - Mongoose
+
+- I used the SAAP website (where I got Harper) as a point of reference for naming pets and getting their info (https://www.adoptastray.com/)
 
 This is in a public repository on GitHub.
 
