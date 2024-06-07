@@ -7,7 +7,7 @@ const app = express();
 // Port in which the server will run on
 const PORT = process.env.PORT || 8000;
 // Requiring example router
-const userRouter = require("./routes/users.js");
+const adopterRouter = require("./routes/adopters.js");
 
 // Configuring the server to accept and parse JSON data.
 app.use(express.json());
@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 // Connecting the router to the server
-app.use("/users", userRouter);
+app.use("/adopters", adopterRouter);
 
 // Error Handling Middlware
 app.use((err, req, res, next) => {
