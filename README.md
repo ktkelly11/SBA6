@@ -16,6 +16,15 @@ I used a number of open source projects in order to work properly:
 
 This is in a public repository on GitHub.
 
+## Table of Working Methods
+
+| Adopters | Dogs   | Cats   |
+| -------- | ------ | ------ |
+| Get      | Get    | Get    |
+| Post     | Post   | Post   |
+| Put      | Put    | Put    |
+| Delete   | Delete | Delete |
+
 ## Development
 
 Website designed by Katie Kelly
